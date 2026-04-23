@@ -198,4 +198,4 @@ Five unit tests covering every branch of the classifier.
 
 ## License
 
-MIT — no license file committed; freely reusable.
+MIT — see [LICENSE](LICENSE).
