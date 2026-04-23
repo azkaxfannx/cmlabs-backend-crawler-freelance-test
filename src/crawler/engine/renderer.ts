@@ -15,7 +15,7 @@
  * to reuse from the CLI script.
  */
 
-import { chromium, type Browser, type BrowserContext, type Page } from 'playwright';
+import { chromium, type Browser } from 'playwright';
 import { autoScroll } from './scroller';
 import { classify, collectSignals, type DetectionResult } from './detector';
 
