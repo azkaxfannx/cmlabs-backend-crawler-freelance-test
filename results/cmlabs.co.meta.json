@@ -2,7 +2,7 @@
   "url": "https://cmlabs.co",
   "finalUrl": "https://cmlabs.co/en-id",
   "title": "Professional and Reliable SEO Agency Indonesia - cmlabs",
-  "fetchedAt": "2026-04-23T05:43:19.617Z",
+  "fetchedAt": "2026-04-23T06:05:30.048Z",
   "detection": {
     "kind": "SSR",
     "framework": null,
@@ -25,7 +25,7 @@
     "requests": 143,
     "failedRequests": 2,
     "serviceWorkersSeen": 0,
-    "durationMs": 12710
+    "durationMs": 15704
   },
   "artifacts": {
     "html": "cmlabs.co.html",

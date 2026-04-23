@@ -2,7 +2,7 @@
   "url": "https://sequence.day",
   "finalUrl": "https://www.sequence.day/",
   "title": "Comprehensive Digital Solutions for Your Business | Sequence",
-  "fetchedAt": "2026-04-23T05:43:23.654Z",
+  "fetchedAt": "2026-04-23T06:05:34.195Z",
   "detection": {
     "kind": "HYBRID",
     "framework": "Next.js",
@@ -22,10 +22,10 @@
     ]
   },
   "stats": {
-    "requests": 97,
-    "failedRequests": 1,
+    "requests": 96,
+    "failedRequests": 5,
     "serviceWorkersSeen": 0,
-    "durationMs": 4007
+    "durationMs": 4125
   },
   "artifacts": {
     "html": "sequence.day.html",

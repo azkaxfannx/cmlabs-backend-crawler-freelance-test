@@ -34,9 +34,9 @@ async function main(): Promise<void> {
   const summary: Array<Record<string, unknown>> = [];
 
   try {
-    for (const url of TARGETS) {
-      const label = `[${TARGETS.indexOf(url) + 1}/${TARGETS.length}] ${url}`;
-      // eslint-disable-next-line no-console
+    for (const [index, url] of TARGETS.entries()) {
+      const label = `[${index + 1}/${TARGETS.length}] ${url}`;
+
       console.log(`\n${label} — rendering…`);
 
       try {
@@ -69,7 +69,6 @@ async function main(): Promise<void> {
           fs.writeFile(shotPath, result.screenshot),
         ]);
 
-        // eslint-disable-next-line no-console
         console.log(
           `${label} — ok · ${result.detection.kind}` +
             (result.detection.framework ? ` (${result.detection.framework})` : '') +
@@ -86,7 +85,6 @@ async function main(): Promise<void> {
           htmlBytes: result.html.length,
         });
       } catch (err) {
-        // eslint-disable-next-line no-console
         console.error(`${label} — FAILED:`, (err as Error).message);
         summary.push({ url, error: (err as Error).message });
       }
@@ -98,7 +96,6 @@ async function main(): Promise<void> {
       'utf8',
     );
 
-    // eslint-disable-next-line no-console
     console.log('\nDone. See ./results for the output.\n');
   } finally {
     await engine.stop();
@@ -106,7 +103,6 @@ async function main(): Promise<void> {
 }
 
 main().catch((err) => {
-  // eslint-disable-next-line no-console
   console.error(err);
   process.exit(1);
 });

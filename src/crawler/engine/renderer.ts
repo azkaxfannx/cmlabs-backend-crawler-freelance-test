@@ -94,14 +94,19 @@ export class CrawlerEngine {
     // Capture the raw HTML the origin responded with (before JS runs).
     // This is critical for detection: it tells us how much content was
     // server-rendered vs injected later by the client.
+    //
+    // We compare normalized URLs (ignoring trailing slash) because Playwright
+    // reports URLs with their canonical path while callers may pass them
+    // without the trailing slash.
     let rawHtml = '';
+    const normalize = (u: string): string => u.replace(/\/+$/, '');
+    const targetNormalized = normalize(opts.url);
     page.on('response', async (resp) => {
       try {
-        if (resp.url() === opts.url || resp.url() === opts.url.replace(/\/$/, '')) {
-          const ct = resp.headers()['content-type'] ?? '';
-          if (ct.includes('text/html') && !rawHtml) {
-            rawHtml = await resp.text();
-          }
+        if (normalize(resp.url()) !== targetNormalized) return;
+        const ct = resp.headers()['content-type'] ?? '';
+        if (ct.includes('text/html') && !rawHtml) {
+          rawHtml = await resp.text();
         }
       } catch {
         // body may already be consumed or the response may be a redirect — ignore
