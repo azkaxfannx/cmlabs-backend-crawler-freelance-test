@@ -1,0 +1,34 @@
+{
+  "url": "https://sequence.day",
+  "finalUrl": "https://www.sequence.day/",
+  "title": "Comprehensive Digital Solutions for Your Business | Sequence",
+  "fetchedAt": "2026-04-23T05:43:23.654Z",
+  "detection": {
+    "kind": "HYBRID",
+    "framework": "Next.js",
+    "signals": {
+      "hasServiceWorker": false,
+      "hasManifest": false,
+      "framework": "Next.js",
+      "rootLooksEmptyBeforeJs": false,
+      "hasNextData": true,
+      "hasNuxtData": false,
+      "hasSvelteKit": false,
+      "bodyTextLengthRaw": 4832,
+      "bodyTextLengthRendered": 4791
+    },
+    "reasoning": [
+      "framework markers present (Next.js) and origin already shipped 4832 chars — SSR + client hydration"
+    ]
+  },
+  "stats": {
+    "requests": 97,
+    "failedRequests": 1,
+    "serviceWorkersSeen": 0,
+    "durationMs": 4007
+  },
+  "artifacts": {
+    "html": "sequence.day.html",
+    "screenshot": "sequence.day.png"
+  }
+}

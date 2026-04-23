@@ -1,0 +1,34 @@
+{
+  "url": "https://cmlabs.co",
+  "finalUrl": "https://cmlabs.co/en-id",
+  "title": "Professional and Reliable SEO Agency Indonesia - cmlabs",
+  "fetchedAt": "2026-04-23T05:43:19.617Z",
+  "detection": {
+    "kind": "SSR",
+    "framework": null,
+    "signals": {
+      "hasServiceWorker": false,
+      "hasManifest": false,
+      "framework": null,
+      "rootLooksEmptyBeforeJs": false,
+      "hasNextData": false,
+      "hasNuxtData": false,
+      "hasSvelteKit": false,
+      "bodyTextLengthRaw": 31082,
+      "bodyTextLengthRendered": 7189
+    },
+    "reasoning": [
+      "origin shipped 31082 chars of body text, no SPA markers"
+    ]
+  },
+  "stats": {
+    "requests": 143,
+    "failedRequests": 2,
+    "serviceWorkersSeen": 0,
+    "durationMs": 12710
+  },
+  "artifacts": {
+    "html": "cmlabs.co.html",
+    "screenshot": "cmlabs.co.png"
+  }
+}

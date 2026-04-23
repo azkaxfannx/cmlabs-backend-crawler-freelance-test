@@ -1,0 +1,32 @@
+{
+  "generatedAt": "2026-04-23T05:43:30.246Z",
+  "targets": [
+    {
+      "url": "https://cmlabs.co",
+      "slug": "cmlabs.co",
+      "type": "SSR",
+      "framework": null,
+      "title": "Professional and Reliable SEO Agency Indonesia - cmlabs",
+      "durationMs": 12710,
+      "htmlBytes": 3944636
+    },
+    {
+      "url": "https://sequence.day",
+      "slug": "sequence.day",
+      "type": "HYBRID",
+      "framework": "Next.js",
+      "title": "Comprehensive Digital Solutions for Your Business | Sequence",
+      "durationMs": 4007,
+      "htmlBytes": 152593
+    },
+    {
+      "url": "https://web.dev",
+      "slug": "web.dev",
+      "type": "PWA",
+      "framework": null,
+      "title": "web.dev",
+      "durationMs": 6576,
+      "htmlBytes": 133510
+    }
+  ]
+}

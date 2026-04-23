@@ -1,0 +1,34 @@
+{
+  "url": "https://web.dev",
+  "finalUrl": "https://web.dev/",
+  "title": "web.dev",
+  "fetchedAt": "2026-04-23T05:43:30.237Z",
+  "detection": {
+    "kind": "PWA",
+    "framework": null,
+    "signals": {
+      "hasServiceWorker": true,
+      "hasManifest": true,
+      "framework": null,
+      "rootLooksEmptyBeforeJs": false,
+      "hasNextData": false,
+      "hasNuxtData": false,
+      "hasSvelteKit": false,
+      "bodyTextLengthRaw": 8627,
+      "bodyTextLengthRendered": 6824
+    },
+    "reasoning": [
+      "service worker registered and web app manifest present"
+    ]
+  },
+  "stats": {
+    "requests": 162,
+    "failedRequests": 2,
+    "serviceWorkersSeen": 2,
+    "durationMs": 6576
+  },
+  "artifacts": {
+    "html": "web.dev.html",
+    "screenshot": "web.dev.png"
+  }
+}
