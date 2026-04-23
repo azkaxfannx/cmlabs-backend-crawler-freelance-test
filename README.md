@@ -19,14 +19,14 @@ Playwright ticks all three boxes because it runs a real Chromium, executes JavaS
 
 ## Stack
 
-| Layer | Choice | Reason |
-| --- | --- | --- |
-| Runtime | Node.js 20+ | One of the languages allowed by the task spec |
-| Framework | NestJS 10 | Controllers / services / DI / pipes — clean structure for a backend service |
-| Renderer | Playwright 1.49 (Chromium) | Handles SPA, SSR, and PWA with one API |
-| Validation | class-validator + class-transformer + ValidationPipe | Rejects bad input at the boundary |
-| API docs | `@nestjs/swagger` | Auto-generated OpenAPI UI at `/api/docs` |
-| Tests | Jest + ts-jest | Unit tests on the classification logic |
+| Layer      | Choice                                               | Reason                                                                      |
+| ---------- | ---------------------------------------------------- | --------------------------------------------------------------------------- |
+| Runtime    | Node.js 20+                                          | One of the languages allowed by the task spec                               |
+| Framework  | NestJS 10                                            | Controllers / services / DI / pipes — clean structure for a backend service |
+| Renderer   | Playwright 1.49 (Chromium)                           | Handles SPA, SSR, and PWA with one API                                      |
+| Validation | class-validator + class-transformer + ValidationPipe | Rejects bad input at the boundary                                           |
+| API docs   | `@nestjs/swagger`                                    | Auto-generated OpenAPI UI at `/api/docs`                                    |
+| Tests      | Jest + ts-jest                                       | Unit tests on the classification logic                                      |
 
 ## Project layout
 
@@ -159,11 +159,11 @@ Covered by `test/detector.spec.ts`.
 
 ## Results from the assignment run
 
-| Target | Kind | Framework | Rendered HTML | Notes |
-| --- | --- | --- | --- | --- |
-| https://cmlabs.co | SSR | — | ~3.8 MB | Server-rendered backend, heavy inline content, redirects to `/en-id` |
-| https://sequence.day | HYBRID | Next.js | ~150 KB | Next.js App Router (`__next_f` detected) — SSR + client hydration |
-| https://web.dev | PWA | — | ~130 KB | Service worker registered on first visit, manifest present |
+| Target               | Kind   | Framework | Rendered HTML | Notes                                                                |
+| -------------------- | ------ | --------- | ------------- | -------------------------------------------------------------------- |
+| https://cmlabs.co    | SSR    | —         | ~3.8 MB       | Server-rendered backend, heavy inline content, redirects to `/en-id` |
+| https://sequence.day | HYBRID | Next.js   | ~150 KB       | Next.js App Router (`__next_f` detected) — SSR + client hydration    |
+| https://web.dev      | PWA    | —         | ~130 KB       | Service worker registered on first visit, manifest present           |
 
 The third site (`web.dev`) was chosen deliberately — it's a **real** PWA (built by the Chrome team itself), not just a JS-heavy page. That makes the PWA code path actually exercise something.
 
@@ -179,15 +179,15 @@ Five unit tests covering every branch of the classifier.
 
 ## Scripts reference
 
-| Script | What it does |
-| --- | --- |
-| `npm run start:dev` | NestJS in watch mode |
-| `npm run build` | Compile to `dist/` |
-| `npm run start:prod` | Run compiled build |
+| Script                  | What it does                             |
+| ----------------------- | ---------------------------------------- |
+| `npm run start:dev`     | NestJS in watch mode                     |
+| `npm run build`         | Compile to `dist/`                       |
+| `npm run start:prod`    | Run compiled build                       |
 | `npm run crawl:targets` | CLI — crawl the three assignment targets |
-| `npm test` | Run Jest unit tests |
-| `npm run lint` | ESLint |
-| `npm run format` | Prettier |
+| `npm test`              | Run Jest unit tests                      |
+| `npm run lint`          | ESLint                                   |
+| `npm run format`        | Prettier                                 |
 
 ## Design notes
 
