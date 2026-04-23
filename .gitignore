@@ -1,0 +1,35 @@
+# dependencies
+node_modules/
+.pnp/
+.pnp.js
+
+# build output
+dist/
+build/
+*.tsbuildinfo
+
+# logs
+logs/
+*.log
+npm-debug.log*
+
+# env
+.env
+.env.local
+
+# editor
+.vscode/
+.idea/
+
+# crawlee storage (runtime state, we don't commit it)
+storage/
+
+# playwright browsers (downloaded locally by postinstall)
+.playwright-browsers/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# keep results/ tracked so reviewer can see the crawled HTML
+!results/
